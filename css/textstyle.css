@@ -1,14 +1,16 @@
 header{
-  background-color: #C4C4C4;
+  background-color: #575757;
 
 }
 body{
-  background-color: #C4C4C4;
+  background-color: white;
   margin: 0;
 }
-header h1{
+
+header h1 {
+  margin: 0
   color: white;
-  font-size: 30px;
-  font-family: "Gill Sans" sans-serif;
-  padding: 40px;
+  font-size: 25px;
+  padding: 20px;
+  font-family: 'Oswald', sans-serif;
 }
