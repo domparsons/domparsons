@@ -14,10 +14,10 @@ header h1 {
     font-family: 'Oswald', sans-serif;
 }
 header h2 {
-  margin: 0;
+  left: 248px;
   color: white;
-  font-size: 20px
-  position:absolute;
-  right: 10px;
-  top: 10px;
+  font-family: 'Oswald' , sans-serif;
+  position: absolute;
+  top: 27px;
+  font-size: 15px;
 }
