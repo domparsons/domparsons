@@ -1,5 +1,8 @@
-h1{
-  color: orange;
-  font-size: 60px;
-  
+header{
+  background-color: #9C9C9C;
+
+}
+body{
+  background-color: #C4C4C4;
+  margin: 0;
 }
