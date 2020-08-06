@@ -1,5 +1,5 @@
 header{
-  background-color: #9C9C9C;
+  background-color: #C4C4C4;
 
 }
 body{
@@ -10,4 +10,5 @@ header h1{
   color: white;
   font-size: 30px;
   font-family: "Gill Sans" sans-serif;
+  padding: 40px;
 }
