@@ -7,30 +7,58 @@ body{
   margin: 0;
 }
 header h1 {
-    margin: 0;
-    color: grey;
-    font-size: 25px;
-    padding: 30px;
-    font-family: 'Oswald', sans-serif;
-}
-header h2 {
-  left: 248px;
+  margin: 0;
   color: grey;
-  font-family: 'Oswald' , sans-serif;
-  position: absolute;
-  top: 27px;
-  font-size: 15px;
+  font-size: 25px;
+  padding: 30px;
+  font-family: 'Oswald', sans-serif;
 }
 
-header img{
-  position: absolute;
-      right: 41px;
-      width: 40px;
-      top: 40px;
-      right: 40px;
-      padding: 15px;
-  }
+header h2 {
+left: 248px;
+color: grey;
+font-family: 'Oswald' , sans-serif;
+position: absolute;
+top: 27px;
+font-size: 15px;
+}
 
-img:hover{
-  opacity: 0.7;
+header img instagram{
+position: absolute;
+right: 41px;
+width: 40px;
+top: 40px;
+right: 40px;
+padding: 15px;
+}
+
+header img twitter{
+position: absolute;
+  right: 41px;
+  width: 40px;
+  top: 40px;
+  right: 80px;
+  padding: 15px;
+}
+
+header img linkedin{
+position: absolute;
+  right: 41px;
+  width: 40px;
+  top: 40px;
+  right: 120px;
+  padding: 15px;
+}
+
+header img mail{
+position: absolute;
+    right: 41px;
+    width: 40px;
+    top: 40px;
+    right: 160px;
+    padding: 15px;
+}
+
+header img:hover{
+opacity: 0.7;
 }
