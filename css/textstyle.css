@@ -25,7 +25,7 @@ font-size: 15px;
 
 .instagram{
 position: absolute;
-  height: 40px
+  height: 40px;
   width: 40px;
   top: 40px;
   right: 40px;
@@ -34,7 +34,7 @@ position: absolute;
 
 .twitter{
   position: absolute;
-    height: 40px
+    height: 40px;
     width: 40px;
     top: 40px;
     right: 80px;
@@ -43,7 +43,7 @@ position: absolute;
 
 .linkedin{
 position: absolute;
-  height: 40px
+  height: 40px;
   width: 40px;
   top: 40px;
   right: 120px;
@@ -52,6 +52,7 @@ position: absolute;
 
 .mail{
 position: absolute;
+    height: 40px;
     width: 40px;
     top: 40px;
     right: 160px;
