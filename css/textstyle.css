@@ -1,32 +1,102 @@
 header{
   background-color: white;
-  height: 150px;
+  height: 100px;
+  margin: 0;
 }
 body{
   background-color: white;
   margin: 0;
 }
-header h1 {
+
+.name-heading{
   margin: 0;
-  color: grey;
-  font-size: 25px;
-  padding: 30px;
-  font-family: 'Oswald', sans-serif;
+  color: #616161;
+  font-size: 40px;
+  padding-left: 55px;
+  padding-top: 25px;
+  font-family: 'Patrick Hand SC',cursive;
 }
 
-header h2 {
-left: 248px;
-color: grey;
-font-family: 'Oswald' , sans-serif;
-position: absolute;
-top: 27px;
-font-size: 15px;
+.sub-heading{
+  left: 300px;
+  color: #616161;
+  font-family: 'Patrick Hand SC',cursive;
+  position: absolute;
+  top: 11px;
+  font-size: 30px;
+}
+
+.line-one{
+  color: #616161;
+  margin: 0;
+  position: absolute;
+  font-size: 28.5px;
+  left: 53px;
+  top: 1px;
+
+}
+
+.line-two{
+  color: #616161;
+  margin: 0;
+  position: absolute;
+  font-size: 28.5px;
+  left: 53px;
+  top: 51px;
+}
+
+.line-three{
+  color: #616161;
+  margin: 0;
+  position: absolute;
+  font-size: 26px;
+  left: 299px;
+  top: 52px;
+}
+
+.line-four{
+  color: #616161;
+  margin: 0;
+  position: absolute;
+  font-size: 26px;
+  left: 299px;
+  top: 9px;
 }
 
 header img:hover{
 opacity: 0.82;
 }
 
-.dealimg{
-  
+.deal-img{
+  position: absolute;
+  height: 430px;
+  width: 587.4px;
+  left: 85px;
+  top: 120px;
+}
+
+.deal-countrypark-img{
+  position: absolute;
+  height: 430px;
+  right: 80px;
+  top: 150px;
+}
+
+.deal-img-txt{
+  margin: 0;
+  position: absolute;
+  font-size: 25px;
+  font-family: 'Patrick Hand SC', cursive;
+  color: #616161;
+  top: 557px;
+  left: 87px;
+}
+.deal-countrypark-img-txt{
+  margin: 0;
+  position: absolute;
+  font-size: 25px;
+  font-family: 'Patrick Hand SC', cursive;
+  color: #616161;
+  top: 111px;
+  right: 285px;
 }
