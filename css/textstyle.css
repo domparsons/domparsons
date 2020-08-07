@@ -30,6 +30,6 @@ header img{
   width: 40px;
 }
 
-img header:hover{
+img:hover{
   opacity: 0.7;
 }
