@@ -30,7 +30,7 @@ opacity: 0.82;
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.eot?3qkin2');
+	src: url('f099');
 	src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.eot?#iefix3qkin2') format('embedded-opentype'),
 		url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.woff?3qkin2') format('woff'),
 		url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.ttf?3qkin2') format('truetype'),
@@ -107,7 +107,7 @@ opacity: 0.82;
     animation: bounce 1s;
   }
 
-  $networks: linkedin '\eac9' #0077b5, facebook '\e603' #3b5998, twitter '\e618' #00b0ed, github '\eab1' #4183c4, instagram '\e604' #3f729b, vimeo '\ea9c' #1ab7ea, twitch '\ea9b' #6441a5, pinterest '\e605' #cc2127;
+  $networks: linkedin '\f0e1' #FF0000, twitter '\f099' #FF0000, instagram '\f16d' #FF0000, mail '\f0e0' #FF0000
 
   @each $network in $networks {
      .icon-#{nth($network, 1)} {
