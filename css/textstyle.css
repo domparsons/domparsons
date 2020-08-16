@@ -1,6 +1,6 @@
 header{
-  background-color: white;
-  height: 100px;
+  background-color: grey;
+  height: 110px;
   margin: 0;
 }
 body{
@@ -26,42 +26,37 @@ body{
   font-size: 30px;
 }
 
-.line-one{
-  color: #616161;
-  margin: 0;
-  position: absolute;
-  font-size: 28.5px;
-  left: 53px;
-  top: 1px;
+
+
+
+
 
 }
 
-.line-two{
-  color: #616161;
-  margin: 0;
+.social-buttons{
+  width: 100px;
+  height: 100px;
+  background: black;
+  color: white;
   position: absolute;
-  font-size: 28.5px;
-  left: 53px;
-  top: 51px;
+  right: 0;
+
 }
 
-.line-three{
-  color: #616161;
-  margin: 0;
-  position: absolute;
-  font-size: 26px;
-  left: 299px;
-  top: 52px;
+.twitter{
+
 }
 
-.line-four{
-  color: #616161;
-  margin: 0;
-  position: absolute;
-  font-size: 26px;
-  left: 299px;
-  top: 9px;
+.instagram{
+
 }
+
+.linkedin{
+
+}
+
+
+
 
 header img:hover{
 opacity: 0.82;
