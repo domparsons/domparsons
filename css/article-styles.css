@@ -31,10 +31,13 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
+	.article-wrapper {
+		margin-bottom: 30px;
+	}
 	.side-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 20px;
+		grid-gap: 10px;
 	}
 	.article-tile {
 		height: 82%;
