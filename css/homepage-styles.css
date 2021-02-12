@@ -57,9 +57,10 @@
 	.twitter-feed {
 		display: none;
 	}
+
 }
 
-@media screen and (max-width:  800px) {
+@media screen and (max-width: 800px){
 	.introduction-container {
 		flex-wrap: wrap;
 		justify-content: center;
@@ -74,6 +75,10 @@
 		padding: 0px;
 	}
 }
+
+
+
+
 
 @media screen and (max-width: 600px){
 	.article-container {
