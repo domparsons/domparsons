@@ -20,27 +20,29 @@
 	margin-bottom: 30px;
 }
 
-@media screen and (max-width: 1000px) {
+/*@media screen and (max-width: 1000px) {
 	.container-main {
 		padding: 30px 20px;
 	}
-}
+}*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1025px) {
 	.container-main {
 		display: flex;
 		flex-wrap: wrap;
+		padding: 30px 20px;
 	}
 	.article-wrapper {
-		margin-bottom: 30px;
+		margin-bottom: 0px;
 	}
 	.side-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 10px;
+		grid-gap: 30px;
 	}
 	.article-tile {
-		height: 82%;
+		height: 90%;
+		margin: 0;
 	}
 	.header-img {
 		margin-top: 50px;

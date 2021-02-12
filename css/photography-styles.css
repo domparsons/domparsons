@@ -24,6 +24,10 @@ h2 {
 }
 
 @media screen and (max-width: 800px) {
+	.content-container {
+		margin: 40px 20px;
+	}
+
 	.albums-container {
 		grid-gap: 40px;
 	}
