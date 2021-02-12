@@ -1,0 +1,36 @@
+h2 {
+	margin: 15px 0 0 0;
+}
+
+.heading {
+	margin: 15px 0 30px 0;
+}
+
+.content-container {
+	margin: 40px 10%;
+}
+
+.albums-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 50px;
+}
+
+.album-cover{
+}
+
+.image {
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+	.albums-container {
+		grid-gap: 40px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.albums-container {
+		grid-template-columns: 1fr;
+	}
+}

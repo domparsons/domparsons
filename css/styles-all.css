@@ -1,0 +1,82 @@
+* {
+	font-family: 'Nunito', sans-serif;
+}
+
+.decoration {
+	color: #8C8C8C;
+	text-underline-position: 10px;
+}
+
+.no-decoration {
+	text-decoration: none;
+	color: black;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #F3F3F3;
+}
+
+nav {
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+h1 {
+	font-size: 1.8rem;
+	margin: 20px;
+}
+
+hr {
+	margin: 0 20px;
+}
+
+h2 {
+	margin: 0 0 10px 0;
+}
+
+p {
+	grid-column: 2;
+	margin: 0 0 10px 0;
+	display: inline-block;
+}
+
+.socials-container {
+	margin: 25px 25px 5px 5px;
+}
+
+.tile-image {
+	border-radius: 4px;
+	margin: 10px 0;
+}
+
+.information {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tile-tagger {
+	padding: 5px 10px;
+	border-radius: 4px;
+	display: inline-block;
+	margin: 5px 0;
+	font-size: 1rem;
+}
+
+.tile-date {
+	padding: 5px 0;
+	font-size: 1.1rem;
+	margin: 5px 0;
+}
+
+.technology {
+	background-color: #0084A2;
+	color: white;
+}
+
+footer {
+	padding: 40px 10%;
+	margin: 0px;
+}
