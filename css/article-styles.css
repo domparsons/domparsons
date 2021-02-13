@@ -20,14 +20,13 @@
 	margin-bottom: 30px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1300px) {
 	.container-main {
 		display: flex;
 		flex-wrap: wrap;
-		padding: 30px 20px;
 	}
 	.article-wrapper {
-		margin-bottom: 30px;
+		margin-bottom: 0px;
 	}
 	.side-container {
 		display: grid;
@@ -38,17 +37,24 @@
 		height: 90%;
 		margin: 0;
 	}
+}
+
+@media screen and (max-width: 1025px) {
+	.container-main {
+		padding: 30px 20px;
+	}
 	.header-img {
 		margin-top: 50px;
 	}
-	.article-wrapper {
-		padding: 15px;
-	}
+	
 }
 
 @media screen and (max-width: 600px) {
 	.side-container {
 		grid-template-columns: 1fr;
+	}
+	.article-wrapper {
+		padding: 15px;
 	}
 }
 
