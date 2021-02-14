@@ -26,7 +26,7 @@
 		flex-wrap: wrap;
 	}
 	.article-wrapper {
-		margin-bottom: 0px;
+		margin-bottom: 30px;
 	}
 	.side-container {
 		display: grid;
@@ -46,10 +46,6 @@
 	.header-img {
 		margin-top: 50px;
 	}
-	.article-wrapper {
-		margin-bottom: 30px;
-	}
-	
 }
 
 @media screen and (max-width: 600px) {
