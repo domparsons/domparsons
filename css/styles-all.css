@@ -4,6 +4,7 @@
 
 .decoration {
 	color: #8C8C8C;
+	text-decoration: none;
 }
 
 .no-decoration {
@@ -23,31 +24,27 @@ nav {
 	justify-content: space-between;
 }
 
+.underline{
+    position: relative;}
+.underline:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 1px;
+	background-color: #8C8C8C;
+	left: 0px;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.4s ease;
+	border-radius: 4px;}
+.underline:hover:before {
+	visibility: visible;
+	transform: scaleX(1);}
+
 h1 {
 	font-size: 1.8rem;
 	margin: 20px;
-}
-
-.middle{
-    position: relative;
-}
-
-.middle:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  top: 0px;
-  left: 0px;
-  background-color: #0084A2;
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.4s ease;
-  border-radius: 4px;
-}
-.middle:hover:before {
-  visibility: visible;
-  transform: scaleX(1);
 }
 
 hr {
@@ -78,6 +75,12 @@ p {
 	justify-content: space-between;
 }
 
+.tile-date {
+	padding: 5px 0;
+	font-size: 1.1rem;
+	margin: 5px 0;
+}
+
 .tile-tagger {
 	padding: 5px 10px;
 	border-radius: 4px;
@@ -86,16 +89,74 @@ p {
 	font-size: 1rem;
 }
 
-.tile-date {
-	padding: 5px 0;
-	font-size: 1.1rem;
-	margin: 5px 0;
-}
-
 .technology {
 	background-color: #0084A2;
 	color: white;
 }
+
+.book-review {
+	background-color: #A360D9;
+	color: white;
+}
+
+.podcast-review {
+	background-color: #789963;
+	color: white;
+}
+
+.technology-middle{
+    position: relative;}
+.technology-middle:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	top: 0px;
+	background-color: #0084A2;
+	left: 0px;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.4s ease;
+	border-radius: 4px;}
+.technology-middle:hover:before {
+	visibility: visible;
+	transform: scaleX(1);}
+
+.book-review-middle{
+    position: relative;}
+.book-review-middle:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	top: 0px;
+	background-color: #A360D9;	
+	left: 0px;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.4s ease;
+	border-radius: 4px;}
+.book-review-middle:hover:before {
+	visibility: visible;
+	transform: scaleX(1);}
+
+.podcast-review-middle{
+    position: relative;}
+.podcast-review-middle:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	top: 0px;
+	background-color: #789963;	
+	left: 0px;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.4s ease;
+	border-radius: 4px;}
+.podcast-review-middle:hover:before {
+	visibility: visible;
+	transform: scaleX(1);}
 
 footer {
 	padding: 40px 10%;
@@ -113,5 +174,3 @@ footer {
 		margin: 10px 0 10px 20px;
 	}
 }
-
-
