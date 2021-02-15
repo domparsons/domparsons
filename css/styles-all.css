@@ -22,7 +22,26 @@ nav {
 	margin: 0;
 	display: flex;
 	justify-content: space-between;
+	padding: 15px 20px 5px 20px;
 }
+
+.heading-underline{
+    position: relative;}
+.heading-underline:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 5px;
+	background-color: #8C8C8C;
+	left: 0px;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.4s ease;
+	border-radius: 4px;}
+.heading-underline:hover:before {
+	visibility: visible;
+	transform: scaleX(1);}
 
 .underline{
     position: relative;}
@@ -44,7 +63,8 @@ nav {
 
 h1 {
 	font-size: 1.8rem;
-	margin: 20px;
+	margin: 0 10px 8px 0;
+
 }
 
 hr {
@@ -62,7 +82,7 @@ p {
 }
 
 .socials-container {
-	margin: 25px 25px 5px 5px;
+	margin: 5px 0;
 }
 
 .tile-image {
@@ -100,7 +120,7 @@ p {
 }
 
 .podcast-review {
-	background-color: #789963;
+	background-color: #83A587;
 	color: white;
 }
 
@@ -148,7 +168,7 @@ p {
 	width: 100%;
 	height: 5px;
 	top: 0px;
-	background-color: #789963;	
+	background-color: #83A587;	
 	left: 0px;
 	visibility: hidden;
 	transform: scaleX(0);
@@ -166,11 +186,5 @@ footer {
 @media screen and (max-width: 400px){
 	nav {
 		flex-wrap: wrap;		
-	}
-	h1 {
-		margin: 20px 0 0 20px;
-	}
-	.socials-container {
-		margin: 10px 0 10px 20px;
 	}
 }
