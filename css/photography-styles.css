@@ -23,7 +23,7 @@ h2 {
 	border-radius: 5px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1025px) {
 	.content-container {
 		margin: 40px 20px;
 	}
@@ -33,7 +33,7 @@ h2 {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	.albums-container {
 		grid-template-columns: 1fr;
 	}

@@ -42,13 +42,14 @@ h1 {
   background-color: #0084A2;
   visibility: hidden;
   transform: scaleX(0);
-  transition: all 0.3s ease-in-out;
-  border-radius: 5px;
+  transition: all 0.4s ease;
+  border-radius: 4px;
 }
 .middle:hover:before {
   visibility: visible;
   transform: scaleX(1);
 }
+
 hr {
 	margin: 0 20px;
 }
