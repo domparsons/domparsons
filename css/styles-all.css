@@ -179,8 +179,10 @@ p {
 	transform: scaleX(1);}
 
 footer {
-	padding: 40px 10%;
+	padding: 50px 10%;
 	margin: 0px;
+	display: flex;
+	justify-content: center;
 }
 
 @media screen and (max-width: 400px){
