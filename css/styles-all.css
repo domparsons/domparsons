@@ -37,7 +37,7 @@ nav {
 .temporary-nav {
 	display: flex;
 	margin: 15px 20px 10px 20px;
-	width: 400px;
+	width: 350px;
 	justify-content: space-between;
 	font-size: 1.2rem;
 }
@@ -151,11 +151,6 @@ footer {
 	justify-content: center;
 }
 
-@media screen and (max-width: 500px){
-	.temporary-nav {
-		width: 90%;
-	}
-}
 
 @media screen and (max-width: 400px){
 	nav {
