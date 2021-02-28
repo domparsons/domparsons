@@ -10,3 +10,21 @@ h3 {
 .main-wrapper {
 	margin: 20px 20px;
 }
+
+.socials {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr; 
+	width: 500px;
+	grid-gap: 30px;
+}
+
+.social-button {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+	.socials {
+		grid-template-columns: 1fr 1fr;
+		width: 300px;
+	}
+}
