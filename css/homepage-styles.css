@@ -35,6 +35,17 @@
 	border-radius: 4px;
 }
 
+.tile-image {
+	border-radius: 4px;
+	margin: 10px 0;
+}
+
+.tile-date {
+	padding: 5px 0;
+	font-size: 1.1rem;
+	margin: 5px 20px 5px 0;
+}
+
 .cartoon {
 	width: 300px;
 }
@@ -57,7 +68,7 @@
 
 @media screen and (max-width: 800px){
 	.content-container {
-		margin: 30px 8%;
+		margin: 40px 8%;
 	}
 
 	.article-container {
@@ -67,12 +78,11 @@
 
 @media screen and (max-width: 900px){
 	.content-container {
-		margin: 20px;
+		margin: 30px 20px;
 	}
 	.tile-image {
 		width: 200px;
 	}
-
 }
 
 @media screen and (max-width: 600px){

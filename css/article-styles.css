@@ -1,11 +1,29 @@
+h2 {
+	font-size: 2rem;
+	margin: 0 0 20px 0;
+}
+
+h3 {
+	font-size: 1.6rem;
+	margin: 15px 0;
+}
+
+p{
+	font-size: 1.3rem;
+}
+
+li {
+	font-size: 1.2rem;
+}
+
+.tile-image {
+	margin-bottom: 30px;
+	border-radius: 4px;
+}
+
 .container-main {
 	display: flex;
 	margin: 50px 20%;
-}
-
-.article-wrapper {
-/*	border-radius: 4px;
-	box-shadow: 1px 1px 4px 0; black;*/
 }
 
 .article-tile {
