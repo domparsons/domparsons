@@ -3,13 +3,12 @@ h2 {
 }
 
 h3 {
-	margin: 20px 0 10px 10px;
+	margin: 0px;
 	font-size: 1rem;
 }
 
 .main-wrapper {
 	margin: 20px 20px;
-
 }
 
 .socials {
@@ -23,63 +22,37 @@ h3 {
 .social-button {
 	cursor: pointer;
 	border-radius: 20px;
-	background-color: white;
-	padding: 8px 12px;
+	padding: 0;
 	display: flex;
 	align-items: center;
+}
+
+footer {
+	margin-top: 20%;
 }
 
 @media screen and (max-width: 1400px) {
 	.socials {
 		width: 100%;
-		margin: 0;
+		margin: 0px;
 	}
 	h2 {
 		margin: 40px 0;
 	}
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1400px) {
 	.socials {
-		grid-template-columns: 1fr 1fr;
-		width: 60%;
-		margin: 0 20%;
+		grid-gap: 40px;
 	}
 	h2 {
-		margin: 40px 20%;
-	}
-}
-
-@media screen and (max-width: 900px) {
-	.socials {
-		grid-template-columns: 1fr 1fr;
-		width: 80%;
-		margin: 0 10%;
-	}
-	h2 {
-		margin: 40px 10%;
+		margin: 40px 0;
 	}
 }
 
 @media screen and (max-width: 680px) {
 	.socials {
 		grid-template-columns: 1fr 1fr;
-		width: 100%;
-		margin: 0 0;
-		grid-gap: 20px
-	}
-	h2 {
-		margin: 40px 0;
-	}
-}
-
-@media screen and (max-width: 510px) {
-	.socials {
-		grid-template-columns: 1fr;
-		width: 80%;
-		margin: 0 10%;
-	}
-	h2 {
-		margin: 40px 10%;
+		grid-gap: 30px;
 	}
 }
