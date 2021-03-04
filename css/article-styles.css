@@ -21,6 +21,11 @@ li {
 	border-radius: 4px;
 }
 
+.embed-image {
+	margin-bottom: 0;
+	border-radius: 4px;
+}
+
 .container-main {
 	display: flex;
 	margin: 50px 20%;
