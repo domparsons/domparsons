@@ -23,9 +23,14 @@ body {
 	background-color: #F3F3F3;
 }
 
+.logo-decoration {
+	color: #F3F3F3;
+	text-decoration: none;
+}
+
 .decoration {
 	text-decoration: none;
-	color: #F3F3F3;
+	color: #3E6F84;
 }
 
 .no-decoration {
