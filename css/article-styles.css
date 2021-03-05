@@ -16,6 +16,11 @@ li {
 	font-size: 1.2rem;
 }
 
+.handwriting {
+	font-family: 'Kavivanar', cursive;
+	font-size: 2rem;
+}
+
 .tile-image {
 	margin-bottom: 30px;
 	border-radius: 4px;
