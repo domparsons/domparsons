@@ -1,7 +1,7 @@
-* {
+* :not(.logo-decoration) {
 	font-family: 'Nunito', sans-serif;
 	box-sizing: border-box;
-	/*color: #112A46;*/
+	color: #4E4E4E;
 }
 
 h1 {
@@ -24,8 +24,11 @@ body {
 	background-color: #F3F3F3;
 }
 
-.logo-decoration {
+.logo-colour {
 	color: #F3F3F3;
+}
+
+.logo-decoration {
 	text-decoration: none;
 }
 
