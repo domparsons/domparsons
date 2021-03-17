@@ -1,13 +1,11 @@
 .main-wrapper {
-	margin: 20px 20px 40px 20px;
+	margin: 20px 0% 40px 20%;
 	padding: 0;
 }
 
 .content-wrapper {
 	margin-top: 0;
 	padding: 0;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
 }
 
 .impossible-list {
@@ -42,59 +40,11 @@ p {
 	padding: 0;
 }
 
-.mouseover {
-	position: relative;
-	display: flex;
-}
-
-.mouseover .tooltiptext {
-	visibility: hidden;
-	background-color: #6A9FCA;
-	color: #fff;
-	font-size: 15px;
-	max-width: 300px;
-	line-height: 20px;
-	text-align: center;
-	padding: 5px;
-	margin-left: 0px;
-	margin-top: 30px;
-	border-radius: 4px;
-	position: absolute;
-}
-
-.mouseover:hover .tooltiptext {
- 	visibility: visible;
-}
-
-
-.box1 {
-	margin: 20px;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 40px;
-
-}
-
-.box2 {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	border-radius: 10px;
-}
-
-.colourimg {
-	width: 100%;
-}
-
-@media screen and (max-width: 900px) {
-	.content-wrapper {
-		display: grid;
-		grid-template-columns: 1fr;
-	}
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 	.impossible-list {
 		padding: 0;
+	}
+	.main-wrapper {
+		margin: 20px 20px 40px 20px;
 	}
 }

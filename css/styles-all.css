@@ -76,7 +76,7 @@ nav {
 
 .nav-links {
 	display: flex;
-	width: 400px;
+	width: 500px;
 	justify-content: space-between;
 	align-items: center;
 	list-style: none;
@@ -105,13 +105,31 @@ nav {
 }
 
 footer {
-	padding: 50px 10%;
+	padding: 35px 10%;
 	margin: 0px;
 	display: flex;
 	justify-content: center;
 }
 
-@media screen and (max-width: 750px) {
+.footer-contents {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-text {
+	
+}
+
+.socials {
+	margin-bottom: 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 15px;
+	max-width: 180px;
+}
+
+@media screen and (max-width: 1000px) {
 	body {
 		overflow-x: hidden;
 	}
@@ -122,7 +140,7 @@ footer {
 		margin: 0;
 		background-color: #3E6F84;
 		justify-content: space-around;
-		padding: 30% 0 35% 0;
+		padding: 20% 0 20% 0;
 		font-size: 1.2rem;
 		display: none;
 	}
