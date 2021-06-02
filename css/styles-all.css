@@ -2,7 +2,6 @@
 	font-family: 'Nunito', sans-serif;
 	box-sizing: border-box;
 	color: #4E4E4E;
-	/*color: #F3F3F3;*/
 }
 
 h1 {
@@ -23,12 +22,9 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #F3F3F3;
-	/*background-color: #434343;*/
 }
 
 .logo-colour {
-	color: #F3F3F3;
-	/*color: #4E4E4E;*/
 	letter-spacing: 0px;
 }
 
@@ -53,8 +49,8 @@ body {
 	position: absolute;
 	width: 100%;
 	height: 1px;
-	bottom: -1px;
-	background-color: #F3F3F3;
+	bottom: -2px;
+	background-color: #4E4E4E;
 	visibility: hidden;
 	transform: scaleX(0);
 	transition: all 0.4s ease;
@@ -68,8 +64,6 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	height: 10%;
-	background-color: #3E6F84;
-	/*color: #F3F3F3;*/
 	padding: 0 20px 0 20px;
 }
 
@@ -80,7 +74,7 @@ nav {
 
 .nav-links {
 	display: flex;
-	width: 500px;
+	width: 450px;
 	justify-content: space-between;
 	align-items: center;
 	list-style: none;
@@ -88,10 +82,8 @@ nav {
 }
 
 .nav-links li {
-	color: #F3F3F3;
-	/*color: #4E4E4E;*/
 	letter-spacing: 0.5px;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	opacity: 1;
 }
 
@@ -104,38 +96,42 @@ nav {
 	height: 2px;
 	width: 30px;
 	border-radius: 100px;
-	background-color: white;
-	/*background-color: #4E4E4E;*/
+	background-color: #4E4E4E;
 	margin: 7px;
 	transition: all 0.4s ease;
 }
 
 footer {
-	padding: 40px 10%;
-	margin: 0px;
-	display: flex;
-	justify-content: center;
+	padding: 30px 20px;
+}
+
+.footer-text {
+	font-size: 1.3rem;
 }
 
 .footer-contents {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	justify-content: space-between;
+	align-items: flex-end;
 }
 
-.footer-text {
-	
+.social-item {
+	padding: 6px;
+	border-radius: 5px;
+}
+
+.social-item:hover {
+	background-color: #D9D9D9;
 }
 
 .socials {
-	margin-bottom: 20px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 25px;
+	grid-gap: 6px;
 	max-width: 150px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 	body {
 		overflow-x: hidden;
 	}
@@ -144,7 +140,7 @@ footer {
 		top: -0px;
 		right: 0px;
 		margin: 0;
-		background-color: #3E6F84;
+		background-color: #F3F3F3;
 		justify-content: space-around;
 		padding: 20% 0 20% 0;
 		font-size: 1.2rem;
@@ -161,7 +157,6 @@ footer {
 
 .nav-active {
 	display: block;
-	background-color: #3E6F84;
 	display: flex;
 	width: 100%;
 	height: 100%;
