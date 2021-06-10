@@ -34,6 +34,12 @@ li {
 .container-main {
 	display: flex;
 	margin: 50px 20%;
+	justify-content: center;
+}
+
+.article-wrapper {
+	/*width: 100%;*/
+	max-width: 1200px;
 }
 
 .article-tile {
