@@ -1,0 +1,58 @@
+body {
+	background-color: #6D6D84;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	margin: 10vh 10% 15vh;
+	height: 75vh;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+
+
+.landinglink {
+	margin: 10px 0;
+	color: white;
+	font-size: 4rem;
+}
+
+.landingsocialscontainer {
+	display: flex;
+}
+
+.social-item {
+	margin-right: 10px;
+}
+
+.social-item:hover {
+	background-color: #54546F;
+}
+
+.landinglinkdecoration {
+	text-decoration: none;
+  
+}
+
+.landinglinkdecoration:hover {
+	text-decoration: underline;
+  	text-decoration-color: white;
+}
+
+.landinglinkdecoration:before {
+	content: "";
+	width: 100%;
+	position: absolute;
+	bottom: 100px;
+}
+
+
+@media screen and (max-width: 700px) {
+	.landinglink {
+		margin: 10px 0;
+		color: white;
+		font-size: 3rem;
+	}

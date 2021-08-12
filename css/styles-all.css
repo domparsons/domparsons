@@ -1,5 +1,6 @@
 * :not(.logo-decoration) {
-	font-family: 'Nunito', sans-serif;
+	/*font-family: 'Nunito', sans-serif;*/
+	font-family: 'Raleway', sans-serif;
 	box-sizing: border-box;
 	color: #4E4E4E;
 }
@@ -16,6 +17,7 @@ p {
 	grid-column: 2;
 	margin: 0 0 10px 0;
 	display: inline-block;
+	line-height: 29px;
 }
 
 body {
@@ -84,7 +86,7 @@ nav {
 
 .nav-links {
 	display: flex;
-	width: 450px;
+	width: 350px;
 	justify-content: space-between;
 	align-items: center;
 	list-style: none;
