@@ -2,6 +2,8 @@ body {
 	background-color: #6D6D84;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
+	height: 100%;
 }
 
 section {
@@ -12,12 +14,30 @@ section {
 	flex-direction: column;
 }
 
+#TwitterFill {
+	-webkit-filter: drop-shadow(4px 3px 0px #424257);
+ 	filter: drop-shadow(4px 3px 0px #424257);
+}
 
+#LinkedInFill {
+	-webkit-filter: drop-shadow(4px 3px 0px #424257);
+ 	filter: drop-shadow(4px 3px 0px #424257);
+}
+
+#InstagramFill {
+	-webkit-filter: drop-shadow(4px 3px 0px #424257);
+ 	filter: drop-shadow(4px 3px 0px #424257);
+}
 
 .landinglink {
 	margin: 10px 0;
 	color: white;
 	font-size: 4rem;
+	text-shadow: 4px 1px 0px #424257;
+}
+
+.landinglinkmain {
+	text-decoration: underline;
 }
 
 .landingsocialscontainer {
@@ -29,17 +49,20 @@ section {
 }
 
 .social-item:hover {
-	background-color: #54546F;
+	background-color: #6D6D84;
+
 }
 
 .landinglinkdecoration {
 	text-decoration: none;
+
   
 }
 
 .landinglinkdecoration:hover {
 	text-decoration: underline;
   	text-decoration-color: white;
+
 }
 
 .landinglinkdecoration:before {
