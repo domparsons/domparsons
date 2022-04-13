@@ -14,14 +14,14 @@ h2 {
 .albums-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 50px;
+	grid-gap: 80px;
 }
 
 .album-cover{
 }
 
 .image {
-	border-radius: 5px;
+	border-radius: 2px;
 }
 
 @media screen and (max-width: 1025px) {
@@ -30,7 +30,7 @@ h2 {
 	}
 
 	.albums-container {
-		grid-gap: 30px;
+		grid-gap: 80px;
 	}
 }
 
