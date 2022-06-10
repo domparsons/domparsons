@@ -4,7 +4,7 @@
 
 /* inter-300 - latin */
 @font-face {
-  font-family: 'Inter';
+	font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
   src: url('../fonts/inter-v11-latin-300.eot'); /* IE9 Compat Modes */
@@ -62,7 +62,7 @@ main {
 
 footer {
 	max-width: 42em;
-	padding: 3em 3em 1.5em 3em;
+	padding: 1em 3em 1.5em 3em;
     margin: 0 auto;
     display: block;
 }
@@ -90,7 +90,7 @@ h2 {
 }
 
 h3 {
-	font-size: 20px;
+	font-size: 24px;
 	margin: 0 0 5px 0;
 	font-weight: normal;
 }
@@ -117,10 +117,12 @@ p {
 	margin: 1em 0;
 }
 
+.portfolio-item {
+	margin-top: 1em;
+}
 
 @media screen and (max-width: 640px) {
 	.width, header, main, footer {
 	    padding: 3em 1.5em 0;
 	}
-
 }
