@@ -1,6 +1,7 @@
 html {
     margin: 0;
     padding: 0;
+    background-color: #F6F6F6;
 }
 
 body {
@@ -17,12 +18,16 @@ body {
     max-width: 500px;
 }
 
-/* Fonts */
 * {
-    font-family: 'Merriweather', serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     text-decoration: none;
     color: black;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 28px;
 }
 
 .secondary {
@@ -31,24 +36,18 @@ body {
     margin-top: 5px;
 }
 
-/* Sections */
-.title-section {
-
+.content-section {
+    /* margin-top: 50px; */
+    margin-bottom: 30px;
 }
 
-/* Project section */
-.projects-section {
+h2 {
     margin-top: 50px;
 }
 
 .project-container {
     display: flex;
-    margin-top: 24px;
-    flex-grow: 0;
-    padding: 16px;
-    border-radius: 16px;
-    background-color: rgb(244, 244, 244);
-    box-shadow: 0 0 5px 2px rgb(201, 201, 201);
+    padding: 20px 0 ;
 }
 
 .project-title {
@@ -63,15 +62,8 @@ body {
 }
 
 .project-image {
-    width: 100px;
+    width: 86px;
     height: auto;
-    margin-right: 16px;
-    transition: all .2s ease-in-out;
-    padding: 5px;
-}
-
-.emoji {
-    font-size: 72px;
     margin-right: 16px;
     transition: all .2s ease-in-out;
     padding: 5px;
