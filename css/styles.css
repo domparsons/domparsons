@@ -93,6 +93,14 @@ h2 {
     justify-content: center;
 }
 
+.tappable {
+    cursor: pointer;
+}
+
+.download-button {
+    margin-top: 20px;
+}
+
 /* Responsive */
 @media screen and (max-width: 1100px) {
     .container-main {
