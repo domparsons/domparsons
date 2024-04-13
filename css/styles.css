@@ -182,20 +182,6 @@ h2 {
     transition-delay: 1.0s; /* Delay for the fourth link */
 }
 
-/* Add more nth-child styles for additional links */
-
-
-
-
-
-
-/* .social {
-    margin-right: 12px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-} */
-
 
 #connect {
     color: rgb(60, 60, 60);
