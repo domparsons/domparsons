@@ -11,6 +11,13 @@ body {
     justify-content: center;
 }
 
+.name-title {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(19, 19, 19);
+    margin-bottom: 10px;
+}
+
 .container-main {
     width: 700px;
     height: auto;
@@ -36,18 +43,44 @@ p {
     margin-top: 5px;
 }
 
+.title-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.personal-photo-container {
+    width: 200px;
+    margin-right: 30px;
+}
+
+.personal-photo {
+    border-radius: 100px;
+}
+
+#personal-photo-hover {
+    opacity: 0;
+}
+
+.personal-photo-container:hover #personal-photo-hover {
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
 .content-section {
-    /* margin-top: 50px; */
     margin-bottom: 30px;
 }
 
 h2 {
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .project-container {
     display: flex;
-    padding: 20px 0 ;
+    margin: 10px 0 ;
 }
 
 .project-title {
@@ -100,6 +133,76 @@ h2 {
 .download-button {
     margin-top: 20px;
 }
+
+.social-links-container {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Added transition property */
+}
+
+.social-links-container.visible {
+    opacity: 1;
+
+}
+
+.social-link {
+
+    margin-right: 12px;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.social-links-container.visible .social-link {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.social-links-container.visible .social-link:nth-child(1) {
+    transition-delay: 0.2s; /* Delay for the first link */
+}
+
+.social-links-container.visible .social-link:nth-child(2) {
+    transition-delay: 0.4s; /* Delay for the second link */
+}
+
+.social-links-container.visible .social-link:nth-child(3) {
+    transition-delay: 0.6s; /* Delay for the third link */
+}
+
+.social-links-container.visible .social-link:nth-child(4) {
+    transition-delay: 0.8s; /* Delay for the fourth link */
+}
+
+.social-links-container.visible .social-link:nth-child(5) {
+    transition-delay: 1.0s; /* Delay for the fourth link */
+}
+
+/* Add more nth-child styles for additional links */
+
+
+
+
+
+
+/* .social {
+    margin-right: 12px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+} */
+
+
+#connect {
+    color: rgb(60, 60, 60);
+
+    margin-bottom: 10px;
+}
+
 
 /* Responsive */
 @media screen and (max-width: 1100px) {
