@@ -17,14 +17,14 @@ function App() {
           >
             <h1 className="text-4xl font-bold text-white">Hey, I'm Dom Parsons 👋</h1>
             <p className="mt-2 text-lg text-gray-300">
-              Welcome to my personal site. Check out my portfolio below!
+              Welcome to my personal site. Check out my portfolio app below!
             </p>
 
             <Card className="mt-6 p-4 bg-gray-700 shadow-xl">
               <CardContent>
                 <Button asChild size="lg" className="w-full">
                   <a href="https://portfolio.domparsons.com" target="_blank" rel="noopener noreferrer">
-                    View My Portfolio
+                    View My Portfolio App
                   </a>
                 </Button>
               </CardContent>
