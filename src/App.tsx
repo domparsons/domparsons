@@ -22,7 +22,6 @@ function App() {
           </motion.div>
 
           <div className="relative z-10 px-6 py-20 max-w-2xl mx-auto space-y-8">
-            {/* Header */}
             <header className="space-y-1 border-b border-gray-200 pb-6">
               <p className="font-semibold">Dom Parsons</p>
               <div className="space-y-4">
@@ -59,19 +58,34 @@ function App() {
               </div>
             </section>
 
-            {/* Projects */}
             <section className="mt-10">
               <h2 className="text-sm uppercase text-gray-500 tracking-wider mb-4">Projects</h2>
               <div className="flex space-x-4 overflow-x-auto pb-2 scrollbar-none">
-                {/* Card 1 */}
-                <div className="min-w-[250px] bg-white shadow-md rounded-md p-4 border border-gray-200">
-                  <h3 className="font-semibold text-gray-900 mb-1">Portfolio App</h3>
+                <a
+                  href="https://portfolio.domparsons.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="min-w-[250px] bg-white shadow-md rounded-md p-4 border border-gray-200 block hover:shadow-lg transition"
+                >
+                  <h3 className="font-semibold text-gray-900 mb-1">Porta</h3>
                   <p className="text-gray-700 text-sm">
                     Full-stack finance tool with backtesting, and natural language support.
                   </p>
-                </div>
+                </a>
 
-                {/* Card 2 */}
+                <a
+                  href="https://github.com/domparsons/artificial-neural-network"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="min-w-[250px] bg-white shadow-md rounded-md p-4 border border-gray-200 block hover:shadow-lg transition"
+                >
+                  <h3 className="font-semibold text-gray-900 mb-1">Artificial Neural Network</h3>
+                  <p className="text-gray-700 text-sm">
+                    University project predicting flood index from hydrological data using a configurable ANN with
+                    Plotly visualisations.
+                  </p>
+                </a>
+
                 <div className="min-w-[250px] bg-white shadow-md rounded-md p-4 border border-gray-200">
                   <h3 className="font-semibold text-gray-900  mb-1">Workflow Automation</h3>
                   <p className="text-gray-700 text-sm">
@@ -79,7 +93,6 @@ function App() {
                   </p>
                 </div>
 
-                {/* Card 3 */}
                 <div className="min-w-[250px] bg-white shadow-md rounded-md p-4 border border-gray-200">
                   <h3 className="font-semibold text-gray-900  mb-1">Analytics Add-in</h3>
                   <p className="text-gray-700 text-sm">
@@ -89,7 +102,6 @@ function App() {
               </div>
             </section>
 
-            {/* Stack */}
             <section>
               <h2 className="text-sm uppercase text-gray-500 tracking-wider mb-4">Tech</h2>
               <p className="text-sm text-gray-700">
@@ -97,7 +109,6 @@ function App() {
               </p>
             </section>
 
-            {/* Contact */}
             <footer className="pt-4 border-t border-gray-200 flex justify-between items-center">
               <p className="text-sm text-gray-600">
                 <a
