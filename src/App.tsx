@@ -45,7 +45,7 @@ function App() {
                   title="Quant Engineering Intern"
                   company="Glencore UK"
                   image={glenImage}
-                  date="Jul 2024 – Jul 2025"
+                  date="2024 – 2025"
                   description="Built and maintained internal tools for trading and analytics teams. Delivered Python automations saving hours daily."
                 />
                 <WorkItem
