@@ -10,7 +10,8 @@
       "@/*": ["src/*"]
     },
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "emitDeclarationOnly": false,
   },
   "include": ["src", "vite-env.d.ts"],
 

@@ -1,10 +1,10 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { BrowserRouter as Router } from 'react-router-dom';
-import { ThemeProvider } from '@/components/theme-provider';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { motion } from 'framer-motion';
+import { ThemeProvider } from "@/components/theme-provider";
+import { Button } from "@/components/ui/button";
+import { Analytics } from "@vercel/analytics/react";
+import { motion } from "framer-motion";
+import { BrowserRouter as Router } from "react-router-dom";
 function App() {
-    return (_jsx(Router, { children: _jsx(ThemeProvider, { children: _jsx("div", { className: "flex min-h-screen items-center justify-center bg-gradient-to-r from-gray-900 to-gray-800 p-6", children: _jsxs(motion.div, { initial: { opacity: 0, y: -20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.5 }, className: "text-center", children: [_jsx("h1", { className: "text-4xl font-bold text-white", children: "Hey, I'm Dom Parsons \uD83D\uDC4B" }), _jsx("p", { className: "mt-2 text-lg text-gray-300", children: "Welcome to my personal site. Check out my portfolio below!" }), _jsx(Card, { className: "mt-6 p-4 bg-gray-700 shadow-xl", children: _jsx(CardContent, { children: _jsx(Button, { asChild: true, size: "lg", className: "w-full", children: _jsx("a", { href: "https://portfolio.domparsons.com", target: "_blank", rel: "noopener noreferrer", children: "View My Portfolio" }) }) }) })] }) }) }) }));
+    return (_jsx(Router, { children: _jsxs(ThemeProvider, { children: [_jsxs("div", { className: "relative min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 overflow-hidden", children: [_jsx(motion.div, { className: "absolute inset-0 z-0", initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { duration: 2 }, children: _jsx("div", { className: "absolute -top-32 -left-32 w-[150%] h-[150%] bg-gradient-to-r from-orange-300 via-rose-200 to-transparent opacity-30 rounded-full blur-3xl animate-pulse" }) }), _jsx("div", { className: "relative z-10 flex items-center justify-center min-h-screen px-6", children: _jsx(motion.div, { initial: { opacity: 0, y: 30 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.6 }, className: "text-center max-w-2xl", children: _jsxs("div", { className: "relative flex flex-col justify-center min-h-screen px-6 max-w-3xl mx-auto text-left space-y-8", children: [_jsxs("div", { children: [_jsx("h1", { className: "text-4xl font-extrabold text-gray-900 leading-tight", children: "Dom Parsons" }), _jsx("p", { className: "text-2xl text-gray-600 mt-2", children: "Quantitative Engineer \u00B7 Final Year Computer Science Student" })] }), _jsx("div", { children: _jsx("h2", { className: "text-3xl font-bold mb-4", children: "Projects & Impact" }) }), _jsx("div", { children: _jsx("h4", { className: "text-xl font-semibold text-gray-800 mb-2", children: "Skills" }) }), _jsx(Button, { asChild: true, className: "bg-orange-500 hover:bg-orange-600 text-white text-lg px-6 py-3 rounded-xl shadow-lg transition-all duration-300", children: _jsx("a", { href: "mailto:dominicparsons@outlook.com", children: "Get in Touch" }) })] }) }) })] }), _jsx(Analytics, {})] }) }));
 }
 export default App;
