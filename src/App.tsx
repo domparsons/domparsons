@@ -29,11 +29,11 @@ function App() {
                   Quantitative Engineer · Computer Science Student
                 </p>
                 <p className="text-gray-600">
-                  A developer and problem solver with a background in financial technology, automation, and analytics
+                  A developer and problem solver with a background in financial technology, automation, and analytics.
                 </p>
                 <p className="text-gray-600">
-                  Currently finishing a placement year at a global financial firm where I’ve worked on high-impact tools
-                  used across trading and analytics desks.
+                  Currently finishing my Computer Science Degree following at a global financial firm where I’ve worked
+                  on high-impact tools used across trading and analytics desks.
                 </p>
               </div>
             </header>
@@ -45,14 +45,14 @@ function App() {
                   title="Quant Engineering Intern"
                   company="Glencore UK"
                   image={glenImage}
-                  date="2024 – 2025"
+                  date="Jul 2024 - Jul 2025"
                   description="Built and maintained internal tools for trading and analytics teams. Delivered Python automations saving hours daily."
                 />
                 <WorkItem
                   title="BSc Computer Science"
                   company="Loughborough University"
                   image={lboroImage}
-                  date="2022 - 2026"
+                  date="Sep 2022 - Jun 2026"
                   description="Focused on systems engineering, with coursework in neural networks and modules in Machine Learning, Data Mining, and Distributed Systems."
                 />
               </div>
