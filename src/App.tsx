@@ -26,13 +26,13 @@ function App() {
               <p className="font-semibold">Dom Parsons</p>
               <div className="space-y-4">
                 <p className="text-gray-600">
-                  Quantitative Engineer · Computer Science Student
+                  Software Engineer · Computer Science Student
                 </p>
                 <p className="text-gray-600">
                   A developer and problem solver with a background in financial technology, automation, and analytics.
                 </p>
                 <p className="text-gray-600">
-                  Currently finishing my Computer Science Degree following at a global financial firm where I’ve worked
+                  Currently finishing my Computer Science BSc following one year at a global financial firm where I worked
                   on high-impact tools used across trading and analytics desks.
                 </p>
               </div>
@@ -42,7 +42,7 @@ function App() {
               <h2 className="text-sm uppercase text-gray-500 tracking-wider mb-4">Experience</h2>
               <div className="space-y-2">
                 <WorkItem
-                  title="Quant Engineering Intern"
+                  title="Quant/Software Engineering Intern"
                   company="Glencore UK"
                   image={glenImage}
                   date="Jul 2024 - Jul 2025"
