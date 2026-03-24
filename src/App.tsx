@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
+import engineImage from "./assets/engine.png";
 import glenImage from "./assets/glen.png";
 import lboroImage from "./assets/lboro.png";
 
@@ -25,22 +26,29 @@ function App() {
             <header className="space-y-1 border-b border-gray-200 pb-6">
               <p className="font-semibold">Dom Parsons</p>
               <div className="space-y-4">
+                <p className="text-gray-600">Computer Science Student</p>
                 <p className="text-gray-600">
-                  Software Engineer · Computer Science Student
+                  A developer and problem solver with a background in financial
+                  technology, automation, and analytics.
                 </p>
                 <p className="text-gray-600">
-                  A developer and problem solver with a background in financial technology, automation, and analytics.
-                </p>
-                <p className="text-gray-600">
-                  Currently finishing my Computer Science BSc following one year at a global financial firm where I worked
-                  on high-impact tools used across trading and analytics desks.
+                  Currently finishing my Computer Science BSc.
                 </p>
               </div>
             </header>
 
             <section>
-              <h2 className="text-sm uppercase text-gray-500 tracking-wider mb-4">Experience</h2>
+              <h2 className="text-sm uppercase text-gray-500 tracking-wider mb-4">
+                Experience
+              </h2>
               <div className="space-y-2">
+                <WorkItem
+                  title="Software Engineering Graduate"
+                  company="Engine by Starling"
+                  image={engineImage}
+                  date="Starting Sep 2026"
+                  // description="Built and maintained internal tools for trading and analytics teams. Delivered Python automations saving hours daily."
+                />
                 <WorkItem
                   title="Quant/Software Engineering Intern"
                   company="Glencore UK"
@@ -59,7 +67,9 @@ function App() {
             </section>
 
             <section className="mt-10">
-              <h2 className="text-sm uppercase text-gray-500 tracking-wider mb-4">Projects</h2>
+              <h2 className="text-sm uppercase text-gray-500 tracking-wider mb-4">
+                Projects
+              </h2>
               <div className="flex space-x-4 overflow-x-auto pb-2 scrollbar-none">
                 <a
                   href="https://portfolio.domparsons.com"
@@ -69,7 +79,8 @@ function App() {
                 >
                   <h3 className="font-semibold text-gray-900 mb-1">Porta</h3>
                   <p className="text-gray-700 text-sm">
-                    Full-stack finance tool with backtesting, and natural language support.
+                    Full-stack finance tool with backtesting, and natural
+                    language support.
                   </p>
                 </a>
 
@@ -79,22 +90,28 @@ function App() {
                   rel="noopener noreferrer"
                   className="min-w-[250px] bg-white shadow-md rounded-md p-4 border border-gray-200 block hover:shadow-lg transition"
                 >
-                  <h3 className="font-semibold text-gray-900 mb-1">Artificial Neural Network</h3>
+                  <h3 className="font-semibold text-gray-900 mb-1">
+                    Artificial Neural Network
+                  </h3>
                   <p className="text-gray-700 text-sm">
-                    University project predicting flood index from hydrological data using a configurable ANN with
-                    Plotly visualisations.
+                    University project predicting flood index from hydrological
+                    data using a configurable ANN with Plotly visualisations.
                   </p>
                 </a>
 
                 <div className="min-w-[250px] bg-white shadow-md rounded-md p-4 border border-gray-200">
-                  <h3 className="font-semibold text-gray-900  mb-1">Workflow Automation</h3>
+                  <h3 className="font-semibold text-gray-900  mb-1">
+                    Workflow Automation
+                  </h3>
                   <p className="text-gray-700 text-sm">
                     Python scripts automating manual trading desk workflows.
                   </p>
                 </div>
 
                 <div className="min-w-[250px] bg-white shadow-md rounded-md p-4 border border-gray-200">
-                  <h3 className="font-semibold text-gray-900  mb-1">Analytics Add-in</h3>
+                  <h3 className="font-semibold text-gray-900  mb-1">
+                    Analytics Add-in
+                  </h3>
                   <p className="text-gray-700 text-sm">
                     OfficeJS add-in with integrated auth.
                   </p>
@@ -103,9 +120,12 @@ function App() {
             </section>
 
             <section>
-              <h2 className="text-sm uppercase text-gray-500 tracking-wider mb-4">Tech</h2>
+              <h2 className="text-sm uppercase text-gray-500 tracking-wider mb-4">
+                Tech
+              </h2>
               <p className="text-sm text-gray-700">
-                Python, TypeScript, React, FastAPI, Pandas, Tailwind CSS, SQL, Git, Kubernetes, Azure
+                Python, TypeScript, React, FastAPI, Pandas, Tailwind CSS, SQL,
+                Git, Kubernetes, Azure
               </p>
             </section>
 
@@ -149,18 +169,18 @@ const WorkItem = ({
   company: string;
   image: string;
   date: string;
-  description: string;
+  description?: string;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div
-      onClick={() => setIsOpen(!isOpen)}
-      className={`cursor-pointer rounded-xl px-3 py-2 transition ${isOpen ? "bg-gray-200" : "hover:bg-gray-200"}`}
+      onClick={() => description && setIsOpen(!isOpen)}
+      className={`rounded-xl px-3 py-2 transition ${description ? "cursor-pointer" : ""} ${isOpen ? "bg-gray-200" : description ? "hover:bg-gray-200" : ""}`}
     >
       <div className="flex justify-between items-center w-full">
         <div className="flex items-center space-x-4">
-          <img src={image} alt="Glen" className="h-6 w-6" />
+          <img src={image} alt={company} className="h-6 w-6" />
           <div>
             <p className="text-gray-900 font-medium">{title}</p>
             <p className="text-gray-600 text-sm">{company}</p>
