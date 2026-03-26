@@ -70,52 +70,50 @@ function App() {
               <h2 className="text-sm uppercase text-gray-500 tracking-wider mb-4">
                 Projects
               </h2>
-              <div className="flex space-x-4 overflow-x-auto pb-2 scrollbar-none">
-                <a
+              <div className="space-y-2">
+                <ProjectItem
+                  name="Porta"
+                  description="Full-stack finance tool with backtesting and natural language support."
                   href="https://portfolio.domparsons.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="min-w-[250px] bg-white shadow-md rounded-md p-4 border border-gray-200 block hover:shadow-lg transition"
-                >
-                  <h3 className="font-semibold text-gray-900 mb-1">Porta</h3>
-                  <p className="text-gray-700 text-sm">
-                    Full-stack finance tool with backtesting, and natural
-                    language support.
-                  </p>
-                </a>
-
-                <a
+                  year="2026"
+                  tags={["Python", "FastAPI", "React"]}
+                />
+                <ProjectItem
+                  name="Fraud Detection"
+                  description="Comparing PyTorch neural network approaches for credit card fraud detection under extreme class imbalance."
+                  href="https://github.com/domparsons/fraud-detection-neural-networks"
+                  year="2026"
+                  tags={["Python", "PyTorch"]}
+                />
+                <ProjectItem
+                  name="Artificial Neural Network"
+                  description="Predicting flood index from hydrological data using a configurable ANN with Plotly visualisations."
                   href="https://github.com/domparsons/artificial-neural-network"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="min-w-[250px] bg-white shadow-md rounded-md p-4 border border-gray-200 block hover:shadow-lg transition"
-                >
-                  <h3 className="font-semibold text-gray-900 mb-1">
-                    Artificial Neural Network
-                  </h3>
-                  <p className="text-gray-700 text-sm">
-                    University project predicting flood index from hydrological
-                    data using a configurable ANN with Plotly visualisations.
-                  </p>
-                </a>
+                  year="2024"
+                  tags={["Python", "Plotly"]}
+                />
+              </div>
+            </section>
 
-                <div className="min-w-[250px] bg-white shadow-md rounded-md p-4 border border-gray-200">
-                  <h3 className="font-semibold text-gray-900  mb-1">
-                    Workflow Automation
-                  </h3>
-                  <p className="text-gray-700 text-sm">
-                    Python scripts automating manual trading desk workflows.
-                  </p>
-                </div>
-
-                <div className="min-w-[250px] bg-white shadow-md rounded-md p-4 border border-gray-200">
-                  <h3 className="font-semibold text-gray-900  mb-1">
-                    Analytics Add-in
-                  </h3>
-                  <p className="text-gray-700 text-sm">
-                    OfficeJS add-in with integrated auth.
-                  </p>
-                </div>
+            <section>
+              <h2 className="text-sm uppercase text-gray-500 tracking-wider mb-4">
+                Experiments
+              </h2>
+              <div className="space-y-2">
+                <ProjectItem
+                  name="Ephemeral"
+                  description="Native macOS journaling app where entries automatically delete after 7 days."
+                  href="https://github.com/domparsons/Ephemeral"
+                  year="2026"
+                  tags={["Swift", "SwiftUI"]}
+                />
+                <ProjectItem
+                  name="Digest"
+                  description="CLI tool that fetches RSS feeds and ranks articles into a digest using a local LLM."
+                  href="https://github.com/domparsons/digest"
+                  year="2026"
+                  tags={["Python", "MLX"]}
+                />
               </div>
             </section>
 
@@ -176,7 +174,7 @@ const WorkItem = ({
   return (
     <div
       onClick={() => description && setIsOpen(!isOpen)}
-      className={`rounded-xl px-3 py-2 transition ${description ? "cursor-pointer" : ""} ${isOpen ? "bg-gray-200" : description ? "hover:bg-gray-200" : ""}`}
+      className={`rounded-xl px-3 py-2 -mx-3 transition ${description ? "cursor-pointer" : ""} ${isOpen ? "bg-gray-200" : description ? "hover:bg-gray-200" : ""}`}
     >
       <div className="flex justify-between items-center w-full">
         <div className="flex items-center space-x-4">
@@ -205,5 +203,33 @@ const WorkItem = ({
     </div>
   );
 };
+
+const ProjectItem = ({
+  name,
+  description,
+  href,
+  year,
+  tags,
+}: {
+  name: string;
+  description: string;
+  href: string;
+  year: string;
+  tags: string[];
+}) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex justify-between items-start rounded-xl px-3 py-2 -mx-3 hover:bg-gray-200 transition"
+  >
+    <div>
+      <p className="text-gray-900 font-medium">{name}</p>
+      <p className="text-gray-600 text-sm">{description}</p>
+      <p className="text-gray-400 text-xs mt-0.5">{tags.join(" · ")}</p>
+    </div>
+    <p className="text-gray-500 text-sm whitespace-nowrap ml-4">{year}</p>
+  </a>
+);
 
 export default App;
