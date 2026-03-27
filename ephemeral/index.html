@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ephemeral | Write. Let go.</title>
+        <meta
+            name="description"
+            content="A disappearing journal for macOS. Beautiful, distraction-free writing. Entries delete after 7 days — local, private, no accounts."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            html,
+            body {
+                height: 100%;
+            }
+
+            body {
+                background: #131315;
+                color: #e8e8e6;
+                font-family:
+                    "Inter",
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    sans-serif;
+                -webkit-font-smoothing: antialiased;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                padding: 2.5rem 1.5rem;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 1.5rem;
+                max-width: 720px;
+                width: 100%;
+            }
+
+            .app-icon {
+                width: 64px;
+                height: 64px;
+                border-radius: 16px;
+            }
+
+            .headline {
+                font-size: clamp(2.5rem, 7vw, 4rem);
+                font-weight: 600;
+                letter-spacing: -0.04em;
+                line-height: 1.05;
+                color: #f0f0ee;
+            }
+
+            .subheadline {
+                font-size: 1rem;
+                font-weight: 400;
+                color: #7a7a77;
+                line-height: 1.65;
+                max-width: 400px;
+            }
+
+            .screenshot-wrapper img {
+                display: block;
+                width: 100%;
+                border-radius: 10px;
+                box-shadow:
+                    0 20px 60px rgba(0, 0, 0, 0.5),
+                    0 0 120px rgba(29, 158, 117, 0.08);
+            }
+
+            .cta {
+                display: inline-block;
+                background: #1d9e75;
+                color: #fff;
+                font-family: "Inter", sans-serif;
+                font-size: 0.9375rem;
+                font-weight: 500;
+                text-decoration: none;
+                padding: 0.625rem 1.75rem;
+                border-radius: 8px;
+                letter-spacing: -0.01em;
+                transition: background 0.15s ease;
+            }
+
+            .cta:hover {
+                background: #1ab882;
+            }
+
+            .details {
+                font-size: 0.6875rem;
+                color: #3e3e3c;
+                line-height: 1.8;
+                letter-spacing: 0.01em;
+            }
+
+            @media (max-width: 600px) {
+                body {
+                    padding: 2rem 1.25rem;
+                }
+                .container {
+                    gap: 1.25rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="icon.png" alt="Ephemeral icon" class="app-icon" />
+
+            <h1 class="headline">Write. Let go.</h1>
+
+            <p class="subheadline">
+                Beautiful, distraction-free writing for macOS.<br />
+                Entries disappear after 7 days — local, private, no accounts.
+            </p>
+
+            <div class="screenshot-wrapper">
+                <img src="screenshot.png" alt="Ephemeral app screenshot" />
+            </div>
+
+            <a
+                href="https://buy.polar.sh/polar_cl_UeTovflIDnyOZYrkkvdJtT0Ov3GcWCi6Ss6722gam8N"
+                class="cta"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Get Ephemeral
+            </a>
+
+            <p class="details">
+                macOS only &nbsp;·&nbsp; Pay what you want &nbsp;·&nbsp; $3
+                minimum<br />
+                100% local. No accounts. No cloud.
+            </p>
+        </div>
+    </body>
+</html>

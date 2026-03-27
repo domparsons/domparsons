@@ -1,7 +1,11 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/ephemeral",
+      "destination": "/ephemeral/index.html"
+    },
+    {
+      "source": "/((?!ephemeral).*)",
       "destination": "/index.html"
     }
   ]

@@ -87,10 +87,9 @@ function App() {
               </h2>
               <div className="space-y-4 border-l border-gray-200 pl-4">
                 <a
-                  href="https://buy.polar.sh/polar_cl_UeTovflIDnyOZYrkkvdJtT0Ov3GcWCi6Ss6722gam8N"
+                  href="/ephemeral/"
                   data-polar-checkout
                   data-polar-checkout-theme="dark"
-                  target="_blank"
                 >
                   <ProjectItem
                     name="Ephemeral"
