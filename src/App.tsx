@@ -86,11 +86,22 @@ function App() {
                 Experiments
               </h2>
               <div className="space-y-4 border-l border-gray-200 pl-4">
-                <ProjectItem
-                  name="Ephemeral"
-                  description="Native macOS journaling app where entries automatically delete after 7 days."
-                  href="https://github.com/domparsons/Ephemeral"
-                />
+                <a
+                  href="https://buy.polar.sh/polar_cl_UeTovflIDnyOZYrkkvdJtT0Ov3GcWCi6Ss6722gam8N"
+                  data-polar-checkout
+                  data-polar-checkout-theme="dark"
+                  target="_blank"
+                >
+                  <ProjectItem
+                    name="Ephemeral"
+                    description="Native macOS journaling app where entries automatically delete after 7 days."
+                  />
+                </a>
+                <script
+                  src="https://cdn.jsdelivr.net/npm/@polar-sh/checkout@0.1/dist/embed.global.js"
+                  defer
+                  data-auto-init
+                ></script>
                 <ProjectItem
                   name="Digest"
                   description="CLI tool that fetches RSS feeds and ranks articles into a digest using a local LLM."
@@ -174,7 +185,7 @@ const ProjectItem = ({
 }: {
   name: string;
   description: string;
-  href: string;
+  href?: string;
 }) => (
   <a
     href={href}
