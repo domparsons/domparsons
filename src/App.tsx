@@ -53,7 +53,7 @@ function App() {
                   company="Loughborough University"
                   image={lboroImage}
                   date="Sep 2022 - Jun 2026"
-                  description="Focused on systems engineering, with modules in Machine Learning, Data Mining, and Distributed Systems and Algorithm Analysis."
+                  description="Focused on systems engineering, with modules in Machine Learning, Data Mining, Distributed Systems, and Algorithm Analysis."
                 />
               </div>
             </section>
