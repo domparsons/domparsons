@@ -66,7 +66,7 @@ function App() {
                 <ProjectItem
                   name="Porta"
                   description="Full-stack portfolio tool with backtesting and natural language support."
-                  href="https://portfolio.domparsons.com"
+                  href="https://github.com/domparsons"
                 />
                 <ProjectItem
                   name="Fraud Detection"
